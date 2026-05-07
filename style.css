@@ -1,0 +1,440 @@
+/* Reset simple pour le look L1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #FFF7ED; /* Fond clair */
+    color: #1C1917; /* Texte principal */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Navigation */
+.a {
+    background-color: #7C2D12; /* Couleur secondaire */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: white;
+}
+
+.c {
+    display: flex;
+    list-style: none;
+}
+
+.c li {
+    margin-left: 20px;
+}
+
+.c a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Bannière */
+.d {
+    background-color: #D97706; /* Couleur principale */
+    color: white;
+    padding: 100px 5%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img-banniere.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.e h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.f {
+    margin-top: 30px;
+}
+
+.btn1, .btn2 {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px; /* Boutons arrondis */
+    margin: 10px;
+    font-weight: bold;
+}
+
+.btn1 { background-color: #FBBF24; color: #1C1917; } /* Accent */
+.btn2 { border: 2px solid white; color: white; }
+
+/* Sections */
+.g, .i {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.h img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.j {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.k {
+    background-color: #FFFFFF;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.k img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+.l {
+    background-color: #7C2D12;
+    color: white;
+    padding: 40px 5% 20px;
+    margin-top: 50px;
+}
+
+.m {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #FBBF24;
+    padding-bottom: 20px;
+}
+
+.o a {
+    color: #FBBF24;
+    text-decoration: none;
+}
+
+.p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN (Media Queries) */
+
+/* Tablette */
+@media (max-width: 992px) {
+    .k { width: 45%; }
+    .e h1 { font-size: 2.5rem; }
+}
+
+/* Téléphone */
+@media (max-width: 600px) {
+    .a { flex-direction: column; }
+    .c { margin-top: 15px; flex-direction: column; text-align: center; }
+    .c li { margin: 5px 0; }
+    .k { width: 100%; }
+    .m { flex-direction: column; text-align: center; }
+    .n, .o { margin-bottom: 20px; }
+}/* Styles spécifiques à la page Menu */
+.q {
+    text-align: center;
+    padding: 40px 5%;
+    background-color: #FFF7ED;
+}
+
+.r {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 5%;
+    gap: 20px;
+}
+
+.s {
+    background-color: #FFFFFF; /* Fond carte */
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.s:hover {
+    transform: translateY(-5px);
+}
+
+.s img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.t {
+    padding: 15px;
+    text-align: left;
+}
+
+.t h4 {
+    color: #7C2D12;
+    margin-bottom: 10px;
+}
+
+.u {
+    font-size: 0.9rem;
+    color: #78716C; /* Texte secondaire */
+    height: 60px;
+}
+
+.v {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #D97706; /* Couleur principale */
+}
+
+.w {
+    background-color: #D97706;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.w:hover {
+    background-color: #FBBF24; /* Couleur d'accent au survol */
+    color: #1C1917;
+}
+
+/* Adaptation Mobile pour le menu */
+@media (max-width: 600px) {
+    .s {
+        width: 100%;
+    }
+}/* Styles pour la page À propos */
+.aa {
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+    background-color: #FFFFFF;
+}
+
+.bb {
+    flex: 1;
+}
+
+.bb h1 {
+    color: #7C2D12;
+    margin-bottom: 20px;
+}
+
+.cc {
+    flex: 1;
+}
+
+.cc img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #FBBF24; /* Décoration jaune */
+}
+
+.dd {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: #FFF7ED;
+}
+
+.dd h2 {
+    margin-bottom: 40px;
+    color: #D97706;
+}
+
+.ee {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ff {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.ff .icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gg {
+    padding: 60px 10%;
+    background-image: linear-gradient(rgba(124, 45, 18, 0.8), rgba(124, 45, 18, 0.8)), url('IMG_ambiance_fond.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.hh h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive À propos */
+@media (max-width: 800px) {
+    .aa {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ff {
+        width: 100%;
+    }
+}/* Styles pour la Galerie (Grid) */
+.ga {
+    display: grid;
+    /* 4 colonnes sur ordinateur par défaut */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    padding: 20px 5% 60px;
+}
+
+.gb {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour que l'image remplisse le carré sans se déformer */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Effet au survol */
+.gb img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE GALERIE */
+
+/* Tablette : 2 images par ligne */
+@media (max-width: 992px) {
+    .ga {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Téléphone : 1 image par ligne */
+@media (max-width: 600px) {
+    .ga {
+        grid-template-columns: 1fr;
+    }
+    .gb {
+        height: 200px;
+    }
+}/* Styles pour la page Réservation */
+.ra {
+    text-align: center;
+    padding: 50px 5%;
+    background-color: #FFF7ED;
+}
+
+.rb {
+    padding: 20px 5% 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.rc {
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.rd {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rd label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #7C2D12;
+}
+
+.rd input, .rd textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.rd input:focus, .rd textarea:focus {
+    outline: none;
+    border-color: #D97706; /* Focus sur la couleur principale */
+}
+
+.re {
+    display: flex;
+    gap: 20px;
+}
+
+.re .rd {
+    flex: 1;
+}
+
+.rf {
+    background-color: #D97706;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.rf:hover {
+    background-color: #7C2D12;
+}
+
+/* Responsive Réservation */
+@media (max-width: 600px) {
+    .re {
+        flex-direction: column;
+        gap: 0;
+    }
+    .rc {
+        padding: 20px;
+    }
+}
